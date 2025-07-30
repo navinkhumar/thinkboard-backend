@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 5001;
 const __dirname = path.resolve();
 
 // middleware
-  app.use(
-    cors({
-      origin: ["https://thinkboard-seven.vercel.app/"]
-    })
-  );
+ app.use(cors({
+  origin: "https://thinkboard-seven.vercel.app",
+  credentials: true
+}));
+
 
 app.use(express.json()); // this middleware will parse JSON bodies: req.body
 // app.use(rateLimiter);
