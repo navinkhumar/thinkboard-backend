@@ -16,7 +16,7 @@ const __dirname = path.resolve();
 // middleware
   app.use(
     cors({
-      origin: ["http://localhost:5173"]
+      origin: ["https://thinkboard-seven.vercel.app/"]
     })
   );
 
